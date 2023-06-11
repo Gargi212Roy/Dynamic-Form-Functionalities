@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: none;
+  border: none;
+}
+
+$bg-color: rgb(246, 241, 234);
+
+body {
+  background-color: $bg-color;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  .homePage {
+    flex: 1.75;
+    height: 100%;
+    // width: 40%;
+    background-image: url("../assets/homepage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  div:nth-child(2) {
+    flex: 2.25;
+    text-align: center;
+    padding: 1rem;
+    a {
+      text-decoration: none;
+    }
+    header {
+      padding: 1rem;
+      font-size: 50px;
+    }
+    .formEmail {
+      font-size: 23px;
+      background: url("../assets/personIcon.svg") 94% center no-repeat #d8dcdf;
+      height: 40px;
+      width: 70%;
+      padding: 0 18px;
+      border-radius: 18px;
+      margin: 12px;
+      outline: none;
+    }
+    .passwordDiv {
+      position: relative;
+
+      .formPassword {
+        font-size: 23px;
+        background-color: #d8dcdf;
+        height: 40px;
+        width: 73%;
+        padding: 0 18px;
+        border-radius: 18px;
+        outline: none;
+      }
+      .showPassword {
+        cursor: pointer;
+        position: absolute;
+        top: 15%;
+        right: 16%;
+        padding: 1rem;
+      }
+      .formPasswordSignUp {
+        margin-top: 15px;
+        font-size: 23px;
+        background-color: #d8dcdf;
+        height: 40px;
+        width: 70%;
+        padding: 0 18px;
+        border-radius: 18px;
+        outline: none;
+      }
+      .showPasswordSignUp {
+        cursor: pointer;
+        position: absolute;
+        top: 12%;
+        right: 16%;
+        padding: 1rem;
+      }
+    }
+    .forgotPasswordLink {
+      margin-top: 1px;
+      width: 85%;
+      display: block;
+
+      cursor: pointer;
+      color: #331184;
+      font-weight: 600;
+      text-align: right;
+    }
+    .signInbtn {
+      cursor: pointer;
+      margin-top: 12px;
+      text-align: center;
+      width: 50%;
+      height: 50px;
+      font-size: 20px;
+      color: azure;
+      border-radius: 50px;
+      background-color: #240669d4;
+    }
+    .oAuthp {
+      margin-top: 2px;
+      margin-bottom: 0px;
+    }
+    .googleBtn {
+      cursor: pointer;
+      padding: 0.5rem;
+      margin: 1.5rem;
+      width: 3rem;
+      height: 3rem;
+      background-color: #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .personal {
+    margin-top: 0;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    p {
+      font-size: 25px;
+      color: #16063dd4;
+    }
+    p:nth-child(2) {
+      cursor: pointer;
+    }
+  }
+  .profileForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div {
+      font-size: 25px;
+      color: #130634d4;
+      input {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+.containerSubmit {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  div:first-child {
+    margin-top: 25px;
+    height: 50%;
+    width: 80%;
+    background-image: url("../assets/page.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  div:nth-child(2) {
+    color: #0d0326d4;
+    font-size: 22px;
+    .submitBackBtn {
+      cursor: pointer;
+      margin-top: 12px;
+      text-align: center;
+      width: 30%;
+      height: 50px;
+
+      border-radius: 50px;
+      background-color: #240669d4;
+      a {
+        font-size: 20px;
+        color: azure;
+        text-decoration: none;
+      }
+    }
+  }
+}
